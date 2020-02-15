@@ -1,6 +1,6 @@
 # 记账本系统
 
->	采用DBCP连接池技术，通过加载配置文件database.properties，获取数据库连接信息，以及连接池最大连接数maxTotal，最大空闲数maxIdle，最小空闲数minIdle，初始连接数initialSize等。  
+> 采用DBCP连接池技术，通过加载配置文件database.properties，获取数据库连接信息，以及连接池最大连接数maxTotal，最大空闲数maxIdle，最小空闲数minIdle，初始连接数initialSize等。  
 ### 项目文件结构
 
 配置文件database.properties一般存放于src目录下，存放的是键值对，使用Properties的getProperty(String key)方法进行读取。注意：等号两侧不要有空格，即左右键值对不要有多余的空格；另外，在配置url时要注意服务时区应当设定为UTC。详情配置参见**[database.properities](./src/database.properities)**
@@ -38,7 +38,7 @@
 ### 第三方jar包
 
 | jar包                           | 官方描述                                                     | 个人理解                                              |
-| ------------------------------- | ------------------------------------------------------------ | ----------------------------------------------------- |
+| :-------------------------------: | :------------------------------------------------------------: | :-----------------------------------------------------: |
 | mysql-connector-java-8.0.17.jar | JDBC Type 4 driver for MySQL                                 | mysql数据库连接的工具包，可选用本机已有版本。         |
 | commons-pool2-2.8.0.jar         | The Apache Commons Object Pooling Library.                   | 连接池主体类                                          |
 | commons-dbcp2-2.7.0.jar         | Apache Commons DBCP software implements Database Connection Pooling | DBCP连接池工具包，是pool2包的实现类。                 |
